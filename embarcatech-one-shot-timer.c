@@ -15,13 +15,7 @@ uint8_t active_leds = 0;
 uint64_t last_time = 0;
 
 int64_t turn_off_callback(alarm_id_t id, void *user_data) {
-    
-    if (active_leds)
-    {
-        gpio_put(leds_gpio_pins[3-active_leds], false);
-        active_leds--;
-    }
-
+    if (active_leds) gpio_put(leds_gpio_pins[3-active_leds--], false);
     if (active_leds) add_alarm_in_ms(STATUS_TIME_MS, turn_off_callback, NULL, false);
 
     return 0;
