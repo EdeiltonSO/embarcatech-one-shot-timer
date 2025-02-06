@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = "build/embarcatech-one-shot-timer.uf2"
+elf = "build/embarcatech-one-shot-timer.elf"
