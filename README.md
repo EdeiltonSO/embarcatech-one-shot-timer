@@ -1,6 +1,3 @@
-# embarcatech-one-shot-timer
-Software escrito em C para controlar LEDs utilizando temporizadores de único disparo e interrupções na BitDogLab.
-
 # Utilizando temporização de disparo único para gerenciar LEDs com o RP2040
 
 ## Sumário
